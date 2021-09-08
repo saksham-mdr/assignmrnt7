@@ -1,0 +1,157 @@
+                * {
+                    margin: 0;
+                    padding: 0;
+                    box-sizing: border-box;
+                }
+                
+                html {
+                    font-size: 10px;
+                }
+                
+                body {
+                    font-family: 'montserrat', sans-serif;
+                    font-size: 1.5rem;
+                    background-image: url("https://images.unsplash.com/photo-1536532184021-da5392b55da1?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80");
+                    background-blend-mode: normal, normal, screen, overlay, normal;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: cover
+                }
+                
+                .app-wrap {
+                    display: flex;
+                    flex-direction: column;
+                    min-height: 100vh;
+                    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6));
+                }
+                
+                header {
+                    display: flex;
+                    flex-flow: column wrap;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 5rem 1.5rem 1.5rem;
+                }
+                
+                header input {
+                    width: 100%;
+                    max-width: 28rem;
+                    padding: 1rem 1.5rem;
+                    border: none;
+                    outline: none;
+                    background-color: rgba(255, 255, 255, 0.3);
+                    border-bottom: 0.8rem solid red;
+                    border-top: 0.2rem solid red;
+                    color: #313131;
+                    font-size: 2rem;
+                    font-weight: 300;
+                    text-align: center;
+                    transition: 0.5s ease-out .01s;
+                }
+                
+                header :hover {
+                    border-top: none;
+                    border-bottom: none;
+                    transition: ease .5s;
+                }
+                
+                header input:focus {
+                    background-color: rgba(255, 255, 255, 0.6);
+                }
+                
+                header .alert {
+                    margin-top: 0.3rem;
+                    font-size: 1.2rem;
+                    color: #fff;
+                }
+                
+                main {
+                    padding: 2.5rem 2.5rem 5rem;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    text-align: center;
+                }
+                
+                .location .date {
+                    color: #FFF;
+                    font-size: 1.6rem;
+                }
+                
+                .date {
+                    transition: 0.5s ease-out .01s;
+                }
+                
+                .date:hover {
+                    font-size: 150%;
+                    transition: 0.5s ease-out .1s;
+                }
+                
+                .location .city {
+                    color: #FFF;
+                    font-size: 3.2rem;
+                    font-weight: 500;
+                    margin-bottom: 0.5rem;
+                    text-shadow: 0.2rem 1rem rgba(0, 0, 0, 0.5);
+                }
+                
+                .city {
+                    transition: 0.5s ease-out .01s;
+                }
+                
+                .city:hover {
+                    font-size: 290%;
+                    transition: 0.5s ease-out .1s;
+                }
+                
+                .current .temp {
+                    color: #FFF;
+                    font-size: 10rem;
+                    font-weight: 900;
+                    margin: 3rem 0rem;
+                    text-shadow: 0.1rem .5rem rgba(0.5, 0, 0.5, 0.5);
+                    transition: 0.5s ease-out .01s;
+                }
+                
+                .temp {
+                    transition: 0.5s ease-out .01s;
+                }
+                
+                .current .temp span {
+                    font-weight: 500;
+                }
+                
+                .current .weather {
+                    color: #FFF;
+                    font-size: 3.2rem;
+                    font-weight: 700;
+                    margin-bottom: 1.5rem;
+                    text-shadow: 0px 3px rgba(0.5, 0, 0.5, 0.5);
+                    transition: 0.5s ease-out .01s;
+                    text-transform: uppercase;
+                }
+                
+                .weather {
+                    transition: 0.5s ease-out .01s;
+                }
+                
+                .weather:hover {
+                    font-size: 250%;
+                    transition: 0.5s ease-out .1s;
+                }
+                
+                .current .hi-low {
+                    color: #FFF;
+                    font-size: 2.4rem;
+                    font-weight: 500;
+                    text-shadow: 0px 0.4rem rgba(0.5, 0, 0.5, 0.5);
+                }
+                
+                .hi-low {
+                    transition: 0.5s ease-out .01s;
+                }
+                
+                .hi-low:hover {
+                    font-size: 250%;
+                    transition: 0.5s ease-out .1s;
+                }
